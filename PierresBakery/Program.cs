@@ -23,18 +23,19 @@ namespace PierresBakery.Models
         Console.WriteLine("Error: Please enter a number.");
         Main();
       }
-      // Console.Write("How many pastry's would you like?:");
-      // string userPastryInput = Console.ReadLine();
-      // try
-      // {
-      //   int intPastryInput = int.Parse(userPastryInput);
-      // }
-      // catch (FormatException)
-      // {
-      //   Console.WriteLine("Error: Please enter a number.");
-      //   Main();
-      // }
+      Console.Write("How many pastry's would you like?:");
+      string userPastryInput = Console.ReadLine();
+      int intPastryInput = int.Parse(userPastryInput);
+      try
+      {
+      }
+      catch (FormatException)
+      {
+        Console.WriteLine("Error: Please enter a number.");
+        Main();
+      }
       Console.WriteLine($"Great! Your total price will be: ${Bread.CalculateBreadPrice(intBreadInput)}!");
+      Console.WriteLine($"Great! Your total price will be: ${Pastry.CalculatePastryPrice(intPastryInput)}!");
       Main();
     }
   }
