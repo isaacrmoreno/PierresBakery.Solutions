@@ -4,19 +4,24 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    public int BreadQty { get; set; }
+    public static int BreadQty { get; set; }
 
     public Bread(int breadQty)
     {
       BreadQty = breadQty;
     }
-    public int TotalBreadPrice()
+
+    public static int CalculateBreadPrice()
     {
       if (BreadQty % 3 == 0)
       {
-        totalPrice = ()
+        int totalBreadPrice = (BreadQty - (BreadQty / 3)) * 5;
+        return totalBreadPrice;
+      }
+      else
+      {
+        return BreadQty * 5;
       }
     }
-
   }
 }
