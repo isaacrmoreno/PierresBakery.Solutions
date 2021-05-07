@@ -22,7 +22,7 @@ namespace PierresBakery.Tests
     public void CalculateBreadPrice_GetsPriceOfThreeBread_BreadTotal()
     {
       int BreadPrice = Bread.CalculateBreadPrice(3);
-      Assert.AreEqual(BreadPrice, 15);
+      Assert.AreEqual(BreadPrice, 10);
     }
   }
 }
