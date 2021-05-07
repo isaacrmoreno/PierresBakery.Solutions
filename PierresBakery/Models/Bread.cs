@@ -5,10 +5,9 @@ namespace PierresBakery
 {
   class Bread
   {
-    static void Main()
+    static void CalculateBreadPrice()
     {
-      Console.WriteLine("Hello World!");
-      Console.ReadLine("")
+
     }
   }
 }
