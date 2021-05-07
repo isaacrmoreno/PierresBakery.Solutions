@@ -1,12 +1,14 @@
 using System;
+using System.Collections.Generic;
 
-namespace Template.Solutions
+namespace PierresBakery
 {
-  class Program
+  class Bread
   {
     static void Main()
     {
       Console.WriteLine("Hello World!");
+      Console.ReadLine("")
     }
   }
 }
