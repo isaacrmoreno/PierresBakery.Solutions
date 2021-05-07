@@ -11,7 +11,7 @@ namespace PierresBakery.Models
       BreadQty = breadQty;
     }
 
-    public static int CalculateBreadPrice()
+    public static int CalculateBreadPrice(int BreadQty)
     {
       if (BreadQty % 3 == 0)
       {
