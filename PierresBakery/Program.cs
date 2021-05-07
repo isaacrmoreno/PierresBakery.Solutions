@@ -6,16 +6,16 @@ namespace PierresBakery.Models
   {
     public static void Main()
     {
-      Console.WriteLine("    🍞 Welcome to Pierres Bakery! 🥧   ");
+      Console.WriteLine("   🍞 Welcome to Pierres Bakery! 🥧    ");
       Console.WriteLine("~~~~~~~~~~~~~~~~~MENU:~~~~~~~~~~~~~~~~");
       Console.WriteLine("Bread $5 - Special: Buy 2, get 1 free!");
       Console.WriteLine("Pastry $2 - Special: Buy 3 for $5!");
       Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       Console.Write("How many loafs of bread would you you like?:");
       string userBreadInput = Console.ReadLine();
+      int intBreadInput = int.Parse(userBreadInput); // If I leave this in the try statement It is only defined there. Idk what to put in try statement anymore for error handling... Come back to this
       try
       {
-        int intBreadInput = int.Parse(userBreadInput);
       }
       catch (FormatException)
       {
@@ -33,7 +33,7 @@ namespace PierresBakery.Models
       //   Console.WriteLine("Error: Please enter a number.");
       //   Main();
       // }
-      Console.WriteLine($"Great! Your total price will be: ${Bread.CalculateBreadPrice()}!");
+      Console.WriteLine($"Great! Your total price will be: ${Bread.CalculateBreadPrice(intBreadInput)}!");
     }
   }
 }
