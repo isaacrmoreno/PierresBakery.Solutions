@@ -1,10 +1,10 @@
 using System;
 
-namespace PierresBakery
+namespace PierresBakery.Models
 {
-  class Program
+  public class Program
   {
-    static void Main()
+    public static void Main()
     {
       Console.WriteLine("    🍞 Welcome to Pierres Bakery! 🥧   ");
       Console.WriteLine("~~~~~~~~~~~~~~~~~MENU:~~~~~~~~~~~~~~~~");
@@ -22,18 +22,18 @@ namespace PierresBakery
         Console.WriteLine("Error: Please enter a number.");
         Main();
       }
-      Console.Write("How many pastry's would you like?:");
-      string userPastryInput = Console.ReadLine();
-      try
-      {
-        int intPastryInput = int.Parse(userPastryInput);
-      }
-      catch (FormatException)
-      {
-        Console.WriteLine("Error: Please enter a number.");
-        Main();
-      }
-      Console.WriteLine("Great! Your total will be: ");
+      // Console.Write("How many pastry's would you like?:");
+      // string userPastryInput = Console.ReadLine();
+      // try
+      // {
+      //   int intPastryInput = int.Parse(userPastryInput);
+      // }
+      // catch (FormatException)
+      // {
+      //   Console.WriteLine("Error: Please enter a number.");
+      //   Main();
+      // }
+      Console.WriteLine($"Great! Your total price will be: ${Bread.CalculateBreadPrice()}!");
     }
   }
 }
