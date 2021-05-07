@@ -1,16 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierresBakery;
+using PierresBakery.Models;
 
-namespace PierresBakery
+namespace PierresBakery.Tests
 {
   [TestClass]
   public class CalculateCostTest
   {
     [TestMethod]
-    public void CalculateBreadPrice_ApplyDiscount_BreadTotal()
+    public void CalculateBreadPrice_GetsPriceOfOneBread_BreadTotal()
     {
-      int BreadQty = Bread.CalculateBreadPrice(BreadPrice);
-      Assert.AreEqual(BreadPrice);
+      int BreadPrice = Bread.CalculateBreadPrice(2);
+      Assert.AreEqual(BreadPrice, 5);
     }
   }
 }
