@@ -1,11 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Template.Models;
+using PierresBakery;
 
-namespace Template.Test
+namespace PierresBakery
 {
   [TestClass]
-  public class Program
+  public class CalculateCostTest
   {
-    //HERE IS WHERE YOU NEED TO PASS YOUR TESTS INTO.
+    [TestMethod]
+    public void CalculateBreadPrice_ApplyDiscount_BreadTotal()
+    {
+      int BreadQty = Bread.CalculateBreadPrice(BreadPrice);
+      Assert.AreEqual(BreadPrice);
+    }
   }
 }
