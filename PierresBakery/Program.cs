@@ -13,7 +13,7 @@ namespace PierresBakery.Models
       Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       Console.Write("How many loafs of bread would you you like?:");
       string userBreadInput = Console.ReadLine();
-      int intBreadInput = int.Parse(userBreadInput); // If I leave this in the try statement It is only defined there. Idk what to put in try statement anymore for error handling... Come back to this
+      int intBreadInput = int.Parse(userBreadInput);
       try
       {
       }
@@ -34,6 +34,7 @@ namespace PierresBakery.Models
       //   Main();
       // }
       Console.WriteLine($"Great! Your total price will be: ${Bread.CalculateBreadPrice(intBreadInput)}!");
+      Main();
     }
   }
 }
