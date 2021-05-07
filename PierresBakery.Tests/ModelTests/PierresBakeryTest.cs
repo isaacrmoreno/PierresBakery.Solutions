@@ -30,5 +30,11 @@ namespace PierresBakery.Tests
       int BreadPrice = Bread.CalculateBreadPrice(9);
       Assert.AreEqual(BreadPrice, 30);
     }
+    [TestMethod]
+    public void CalculateBreadPrice_GetsPriceOf267Bread_BreadTotal()
+    {
+      int BreadPrice = Bread.CalculateBreadPrice(267);
+      Assert.AreEqual(BreadPrice, 100000);
+    }
   }
 }
