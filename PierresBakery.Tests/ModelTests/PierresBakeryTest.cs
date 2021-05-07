@@ -33,7 +33,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void CalculateBreadPrice_GetsPriceOf267Bread_BreadTotal()
     {
-      int BreadPrice = Bread.CalculateBreadPrice(267);
+      int BreadPrice = Bread.CalculateBreadPrice(268);
       Assert.AreEqual(BreadPrice, 100000);
     }
   }
