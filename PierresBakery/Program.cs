@@ -16,6 +16,7 @@ namespace PierresBakery.Models
       int intBreadInput = int.Parse(userBreadInput);
       try
       {
+        // ^^ If you input the above it will cause another error within CalculateBreadPrice parameters.
       }
       catch (FormatException)
       {
