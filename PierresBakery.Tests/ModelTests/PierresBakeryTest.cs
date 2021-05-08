@@ -53,7 +53,7 @@ namespace PierresBakery.Tests
     public void CalculatePastryPrice_GetsPriceOfThreePastry_PastryTotal()
     {
       int PastryPrice = Pastry.CalculatePastryPrice(3);
-      Assert.AreEqual(PastryPrice, 6);
+      Assert.AreEqual(PastryPrice, 5);
     }
   }
 }
