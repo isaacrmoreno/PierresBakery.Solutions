@@ -38,10 +38,16 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void CalculatePastryPrice_GetsPriceOf1Pastry_PastryTotal()
+    public void CalculatePastryPrice_GetsPriceOfOnePastry_PastryTotal()
     {
       int PastryPrice = Pastry.CalculatePastryPrice(1);
       Assert.AreEqual(PastryPrice, 2);
+    }
+    [TestMethod]
+    public void CalculatePastryPrice_GetsPriceOfTwoPastry_PastryTotal()
+    {
+      int PastryPrice = Pastry.CalculatePastryPrice(2);
+      Assert.AreEqual(PastryPrice, 3);
     }
   }
 }
