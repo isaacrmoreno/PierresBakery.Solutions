@@ -65,7 +65,7 @@ namespace PierresBakery.Tests
     public void CalculatePastryPrice_GetsPriceOf362Pastry_PastryTotal()
     {
       int PastryPrice = Pastry.CalculatePastryPrice(362);
-      Assert.AreEqual(PastryPrice, 6000);
+      Assert.AreEqual(PastryPrice, 724);
     }
   }
 }
