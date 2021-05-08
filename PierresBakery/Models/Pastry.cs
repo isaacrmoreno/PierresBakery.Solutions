@@ -10,12 +10,14 @@ namespace PierresBakery.Models
     {
       PastryQty = pastryQty;
     }
-    public static int numOfDiscounts = (PastryQty / 3);
+
     public static int CalculatePastryPrice(int PastryQty)
     {
       if (PastryQty % 3 == 0)
       {
-        int totalPastryPrice = (PastryQty - numOfDiscounts) * 2;
+        int numOfDiscounts = (PastryQty / 3);
+
+        int totalPastryPrice = ((PastryQty * 2) - numOfDiscounts);
         return totalPastryPrice;
       }
       else
