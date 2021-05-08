@@ -34,8 +34,9 @@ namespace PierresBakery.Models
         Console.WriteLine("Error: Please enter a number.");
         Main();
       }
-      Console.WriteLine($"Great! Your total price will be: ${Bread.CalculateBreadPrice(intBreadInput)}!");
-      Console.WriteLine($"Great! Your total price will be: ${Pastry.CalculatePastryPrice(intPastryInput)}!");
+      int TotalOrderPrice = (Bread.CalculateBreadPrice(intBreadInput) + Pastry.CalculatePastryPrice(intPastryInput));
+      Console.WriteLine(TotalOrderPrice);
+      Console.WriteLine($"Great! Your total price will be: {TotalOrderPrice}!");
       Main();
     }
   }
