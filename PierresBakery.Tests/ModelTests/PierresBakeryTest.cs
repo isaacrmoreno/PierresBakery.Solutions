@@ -36,5 +36,12 @@ namespace PierresBakery.Tests
       int BreadPrice = Bread.CalculateBreadPrice(268);
       Assert.AreEqual(BreadPrice, 1340);
     }
+
+    [TestMethod]
+    public void CalculatePastryPrice_GetsPriceOf1Pastry_PastryTotal()
+    {
+      int PastryPrice = Pastry.CalculatePastryPrice(1);
+      Assert.AreEqual(PastryPrice, 1);
+    }
   }
 }
