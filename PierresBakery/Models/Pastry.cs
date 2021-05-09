@@ -15,9 +15,9 @@ namespace PierresBakery.Models
     {
       if (PastryQty % 3 == 0)
       {
-        int numOfDiscounts = (PastryQty / 3);
+        int numOfDiscounts = PastryQty / 3;
 
-        int totalPastryPrice = ((PastryQty * 2) - numOfDiscounts);
+        int totalPastryPrice = (PastryQty * 2) - numOfDiscounts;
         return totalPastryPrice;
       }
       else
