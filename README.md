@@ -27,7 +27,7 @@ This site replicates a mini bakery where a user can pick how much bread or pastr
 4. To run the console app:
    - Navigate to `PierresBakery.Solution/Pierres-Bakery` in your command line
    - Run the command `dotnet restore` to restore the dependencies that are listed in the .csproj
-   - Run the commmand `dotnet build` to build the project and its dependencies into a set of binaries
+   - Run the command `dotnet build` to build the project and its dependencies into a set of binaries
    - Finally, run the command `dotnet run` to run the project!
    - Note: `dotnet run` also restores and builds the project, so you can use this single command to start the console app
 5. To run tests:
