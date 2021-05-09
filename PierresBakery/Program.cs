@@ -14,28 +14,10 @@ namespace PierresBakery.Models
       Console.Write("How many loafs of bread would you you like?:");
       string userBreadInput = Console.ReadLine();
       int intBreadInput = int.Parse(userBreadInput);
-      try
-      {
-        // ^^ If you input the above it will cause another error within CalculateBreadPrice parameters.
-      }
-      catch (FormatException)
-      {
-        Console.WriteLine("Error: Please enter a number.");
-        Main();
-      }
       Console.Write("How many pastry's would you like?:");
       string userPastryInput = Console.ReadLine();
       int intPastryInput = int.Parse(userPastryInput);
-      try
-      {
-      }
-      catch (FormatException)
-      {
-        Console.WriteLine("Error: Please enter a number.");
-        Main();
-      }
-      int TotalOrderPrice = (Bread.CalculateBreadPrice(intBreadInput) + Pastry.CalculatePastryPrice(intPastryInput));
-      Console.WriteLine(TotalOrderPrice);
+      int TotalOrderPrice = Bread.CalculateBreadPrice(intBreadInput) + Pastry.CalculatePastryPrice(intPastryInput);
       Console.WriteLine($"Great! Your total price will be: {TotalOrderPrice}!");
       Main();
     }
