@@ -13,7 +13,6 @@ namespace PierresBakery.Models
       Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       Console.Write("How many loafs of bread would you you like?:");
       string userBreadInput = Console.ReadLine();
-      // int intBreadInput = int.Parse(userBreadInput);
       int intBreadInput = 0;
       try
       {
