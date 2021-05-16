@@ -4,16 +4,16 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
-    public static int PastryQty { get; set; }
+    public int PastryQty { get; set; }
 
     public Pastry(int pastryQty)
     {
       PastryQty = pastryQty;
     }
 
-    public static int CalculatePastryPrice(int PastryQty)
+    public int CalculatePastryPrice()
     {
-      if (PastryQty % 3 == 0)
+      if (this.PastryQty % 3 == 0)
       {
         int numOfDiscounts = PastryQty / 3;
 
